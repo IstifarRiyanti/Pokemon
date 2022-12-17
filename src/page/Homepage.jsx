@@ -44,6 +44,7 @@ const Homepage = () => {
         localStorage.setItem("mypokemon", JSON.stringify({ name: hasilNama, image: hasilGambar }));
     }
 
+
     return (
         <> <Chosen >
             < TheContent >
