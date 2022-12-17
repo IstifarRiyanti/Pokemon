@@ -6,6 +6,7 @@ specifiers:
   '@testing-library/user-event': ^13.5.0
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-router-dom: ^6.4.5
   react-scripts: 5.0.1
   web-vitals: ^2.1.4
 
@@ -15,6 +16,7 @@ dependencies:
   '@testing-library/user-event': 13.5.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-router-dom: 6.4.5_biqbaboplfbrettd7655fr4n2y
   react-scripts: 5.0.1_react@18.2.0
   web-vitals: 2.1.4
 
@@ -1991,6 +1993,11 @@ packages:
       source-map: 0.7.4
       webpack: 5.75.0
       webpack-dev-server: 4.11.1_webpack@5.75.0
+    dev: false
+
+  /@remix-run/router/1.0.5:
+    resolution: {integrity: sha512-my0Mycd+jruq/1lQuO5LBB6WTlL/e8DTCYWp44DfMTDcXz8DcTlgF0ISaLsGewt+ctHN+yA8xMq3q/N7uWJPug==}
+    engines: {node: '>=14'}
     dev: false
 
   /@rollup/plugin-babel/5.3.1_opjstonlpkhafnz76jsxdwq25a:
@@ -8244,6 +8251,29 @@ packages:
   /react-refresh/0.11.0:
     resolution: {integrity: sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /react-router-dom/6.4.5_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-a7HsgikBR0wNfroBHcZUCd9+mLRqZS8R5U1Z1mzLWxFXEkUT3vR1XXmSIVoVpxVX8Bar0nQYYYc9Yipq8dWwAA==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.0.5
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-router: 6.4.5_react@18.2.0
+    dev: false
+
+  /react-router/6.4.5_react@18.2.0:
+    resolution: {integrity: sha512-1RQJ8bM70YEumHIlNUYc6mFfUDoWa5EgPDenK/fq0bxD8DYpQUi/S6Zoft+9DBrh2xmtg92N5HMAJgGWDhKJ5Q==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.0.5
+      react: 18.2.0
     dev: false
 
   /react-scripts/5.0.1_react@18.2.0:

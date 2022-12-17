@@ -1,8 +1,8 @@
 import { useState } from "react"
-import Chosen from "./Chosen"
-import { TheContent, Image, PokemonName, Button } from "./Other"
-import { Pokemons } from "./pokemon.js"
-import PokemonList from "./PokemonList"
+import Chosen from "../component/Chosen"
+import { TheContent, Image, PokemonName, Button } from "../component/Other"
+import { Pokemons } from "../component/pokemon.js"
+import PokemonList from "../component/PokemonList"
 
 const fetchPokemons = async (url) => {
     const response = await fetch('https://pokeapi.co/api/v2/pokemon')
@@ -27,7 +27,7 @@ const fetchPokemons = async (url) => {
     return pokemons
 }
 
-const Page = () => {
+const Homepage = () => {
     const [hasilGambar, sethasilGambar] = useState('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg')
     const [hasilNama, sethasilNama] = useState('Nama')
     const [listPokemon, setListPokemon] = useState([]);
@@ -41,6 +41,7 @@ const Page = () => {
     function handleClick(hasilGambar, hasilNama) {
         sethasilGambar(hasilGambar)
         sethasilNama(hasilNama)
+        localStorage.setItem("mypokemon", JSON.stringify({ name: hasilNama, image: hasilGambar }));
     }
 
     return (
@@ -62,4 +63,4 @@ const Page = () => {
         </>
     )
 }
-export default Page
+export default Homepage
